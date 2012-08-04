@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">The New Boston</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_start_view">StartView</string>
+    <string name="text_view_message">the total is 0</string>
+
+</resources>

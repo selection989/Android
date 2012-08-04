@@ -1,0 +1,190 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thenewboston.terry"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="com.google.android.maps" />
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation" >
+        </activity>
+        <activity
+            android:name=".StartView"
+            android:label="@string/title_activity_start_view"
+            android:theme="@android:style/Theme.Black" >
+            <intent-filter>
+                <action android:name="com.thenewboston.terry.STARTVIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:label="@string/title_activity_start_view" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:label="@string/title_activity_start_view"
+            android:theme="@android:style/Theme.Light" >
+            <intent-filter>
+                <action android:name="com.thenewboston.terry.MENU" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FunWithText"
+            android:label="@string/title_activity_start_view" >
+        </activity>
+        <activity
+            android:name=".Email"
+            android:label="@string/title_activity_start_view" >
+        </activity>
+        <activity
+            android:name=".Camera"
+            android:configChanges="orientation"
+            android:label="Camera" >
+        </activity>
+        <activity
+            android:name=".ActivityStarter"
+            android:label="Start Activity" >
+        </activity>
+        <activity
+            android:name=".Dialogue"
+            android:label="Start Activity"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="com.thenewboston.terry.DIALOG" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Prefs"
+            android:label="Start Activity" >
+            <intent-filter>
+                <action android:name="com.thenewboston.terry.PREFS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GFX"
+            android:label="Start Activity" >
+        </activity>
+        <activity
+            android:name=".GFXSurface"
+            android:label="Start Activity" >
+        </activity>
+        <activity
+            android:name=".FunWithSoundPool"
+            android:label="Start Activity" >
+        </activity>
+        <activity
+            android:name=".DrawerTest"
+            android:label="Start Activity" >
+        </activity>
+        <activity
+            android:name=".WorkingWithTabhost"
+            android:label="Start Activity" >
+        </activity>
+        <activity
+            android:name=".Browser"
+            android:label="Start Activity" >
+        </activity>
+        <activity
+            android:name=".SharedDataUsingFOSAndFIS"
+            android:label="Start Activity" >
+        </activity>
+        <activity
+            android:name=".SharedDataUsingFOSAndFISNoThreading"
+            android:label="Start Activity" >
+        </activity>
+        <activity
+            android:name=".ExternalData"
+            android:label="Start Activity" >
+        </activity>
+        <activity
+            android:name=".SQLiteSubmit"
+            android:label="Start Activity" >
+        </activity>
+        <activity
+            android:name=".SQLiteView"
+            android:label="@string/title_activity_start_view" >
+            <intent-filter>
+                <action android:name="com.thenewboston.terry.SQLITEVIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Accellerate"
+            android:label="Start Activity" >
+        </activity>
+        <activity
+            android:name=".Maps"
+            android:label="Start Activity" >
+        </activity>
+        <activity
+            android:name=".HttpExample"
+            android:label="Start Activity" >
+        </activity>
+        <activity
+            android:name=".HttpJSONExample"
+            android:label="Start Activity" >
+        </activity>
+        <activity
+            android:name=".WeatherXmlExample"
+            android:label="Start Activity" >
+        </activity>
+        <receiver
+            android:name=".PointlessWidget"
+            android:label="Example Widget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_stuff" />
+        </receiver>
+        <activity
+            android:name=".WidgetConfig"
+            android:label="preferences" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GLExample"
+            android:label="Start Activity" >
+        </activity>
+        <activity
+            android:name=".Voice"
+            android:label="Start Activity" >
+        </activity>
+        <activity
+            android:name=".TextToVoice"
+            android:label="Start Activity" >
+        </activity>
+        <activity
+            android:name=".StatusBar"
+            android:label="Start Activity" >
+        </activity>
+        <activity
+            android:name=".SeekBarVolume"
+            android:label="Start Activity" >
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/etURL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:weightSum="100">
+
+        <Button
+            android:id="@+id/bLoad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Load" 
+            android:layout_weight="25"/>
+
+        <Button
+            android:id="@+id/bForward"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Forward" 
+            android:layout_weight="25"/>
+
+        <Button
+            android:id="@+id/bBack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Back" 
+            android:layout_weight="25"/>
+
+        <Button
+            android:id="@+id/bRefresh"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Refresh" 
+            android:layout_weight="25"/>
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/wvMyWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+
+</LinearLayout>
